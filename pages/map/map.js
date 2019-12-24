@@ -1,24 +1,18 @@
-// pages/index/index.js
+// pages/map/map.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        progressPercent: 90,
-        progressActiveMode: "backwards"
+
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        setTimeout(()=> {
-            this.setData({
-                "progressPercent": 100,
-                "progressActiveMode": "forwards"
-            })
-        }, 3000)
+
     },
 
     /**
@@ -68,11 +62,5 @@ Page({
      */
     onShareAppMessage: function () {
 
-    },
-
-    golang: function(){
-        wx.showLoading({
-            title: 'hello world',
-        })
     }
 })
