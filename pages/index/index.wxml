@@ -1,8 +1,14 @@
 <view class="content">
-    <progress 
-        percent="{{progressPercent}}" 
-        active-mode="{{progressActiveMode}}"
-        stroke-width="2px"
-        border-radius="0" 
-        active="true"></progress>
+  <!-- 进度条 -->
+  <progress 
+    percent="{{progressPercent}}" 
+    active-mode="{{progressActiveMode}}"
+    stroke-width="2px"
+    border-radius="0" 
+    active="true"></progress>
+  
+  <!-- 弹框 -->
+  <button bindtap='handleDialog'>显示弹框</button>
 </view>
+
+
