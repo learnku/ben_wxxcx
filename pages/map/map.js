@@ -57,10 +57,11 @@ Page({
     // 打开位置
     wx.chooseLocation({
       success: (res)=> {
-        this.setData({
-          longitude: res.longitude,
-          latitude: res.latitude,
-        })
+        // this.setData({
+        //   longitude: res.longitude,
+        //   latitude: res.latitude,
+        // })
+        console.log(res)
       },
     })
   },
