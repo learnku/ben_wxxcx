@@ -1,2 +1,2 @@
-<!--pages/scan/scan.wxml-->
-<text>pages/scan/scan.wxml</text>
+<button>扫码上机</button>
+<view>{{scan_code}}</view>

@@ -32,7 +32,8 @@ Page({
      * 生命周期函数--监听页面显示
      */
     onShow: function () {
-
+        // 存储当前打开 tabbar 页面 url 地址
+        wx.setStorageSync("tabbar_url", "/pages/index/index")
     },
 
     /**

@@ -43,6 +43,10 @@ Page({
       })
     }
   },
+  onShow: function(){
+      // 存储当前打开 tabbar 页面 url 地址
+      wx.setStorageSync("tabbar_url", "/pages/account/account")
+  },
   getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
