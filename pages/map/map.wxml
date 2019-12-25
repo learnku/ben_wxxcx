@@ -1,2 +1,19 @@
-<!--pages/map/map.wxml-->
-<text>pages/map/map.wxml</text>
+<map 
+  id="map" 
+  longitude="{{longitude}}" 
+  latitude="{{latitude}}" 
+  scale="{{scale}}" 
+  markers="{{markers}}" 
+  bindmarkertap="markertap" 
+  show-location="{{true}}"
+  style="width: 100%; height: 300px;">
+  <!-- 控件 - 定位当前位置 -->
+  <cover-view class='current-location'
+    bindtap='currentLocation'>
+    <cover-image src='/imgs/icons/dingwei.png'></cover-image>
+  </cover-view>
+</map>
+
+
+<button bindtap='currentLocation'>定位位置</button>
+<button bindtap='selectedLocation'>选择位置</button>

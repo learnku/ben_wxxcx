@@ -1,1 +1,8 @@
-/* pages/map/map.wxss */
+/* 当前位置 控件 */
+.current-location{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  bottom: 100rpx;
+  right: 20rpx;
+}
